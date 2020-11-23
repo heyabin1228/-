@@ -5,9 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>大事件登陆</title>
+    <!-- 导入layuiCSS样式 -->
+    <link rel="stylesheet" href="assets/lib/layui/css/layui.css">
+    <!-- 导入自己的样式 -->
+    <link rel="stylesheet" href="assets/css/logo.css">
 </head>
 
 <body>
+    <!-- 头部logo -->
+    <header class="layui-main">
+        <img src="assets/images/logo.png" />
+    </header>
+    <!-- 登陆注册模块 -->
+    <div class="dengl-box">
+        <div class="title-box"></div>
+        <form class="layui-form dengluyem">
+            <div class="layui-form-item">
+                <input type="text" name="username" required lay-verify="required" placeholder="请输入账号" autocomplete="off" class="layui-input">
+            </div>
+            <div class="layui-form-item">
+                <input type="password" name="password" required lay-verify="required|pwd" placeholder="请输入密码" autocomplete="off" class="layui-input">
+            </div>
+            <!-- 登陆按钮 -->
+            <button class="layui-btn layui-btn-normal layui-btn-fluid" lay-submit lay-filter="formDemo">登 陆</button>
+            <!-- 注册页面 -->
+            <div class="zhuc-box qzc-r">
+                <a href="javascript:;" class="denglu-box-r">去注册</a>
+            </div>
+        </form>
+        <!-- 注册页面 -->
+        <form class="layui-form zhuceyemian">
+            <div class="layui-form-item">
+                <input type="text" name="username" required lay-verify="required" placeholder="请输入账号" autocomplete="off" class="layui-input">
+            </div>
+            <div class="layui-form-item">
+                <input type="password" name="password" required lay-verify="required|pwd" placeholder="请输入密码" autocomplete="off" class="layui-input">
+            </div>
+            <div class="layui-form-item">
+                <input type="password" name="respassword" required lay-verify="required|qrpsw" placeholder="请输入密码" autocomplete="off" class="layui-input">
+            </div>
+            <!-- 登陆按钮 -->
+            <button class="layui-btn layui-btn-normal layui-btn-fluid" lay-submit lay-filter="formDemo">注 册</button>
+            <!-- 登陆页面 -->
+            <div class="denglu-box qdl-r">
+                <a href="javascript:;" class="denglu-box-r">去登陆</a>
+            </div>
+        </form>
+
+    </div>
+    <script src="/assets/lib/layui/layui.all.js"></script>
+    <script src="/assets/lib/jquery.js "></script>
+    <script src="/assets/js/wpai.js"></script>
+    <script src="/assets/js/logo.js "></script>
+
 
 </body>
 
